@@ -216,6 +216,8 @@ void humanBody(){
   glRotatef(60,0,0,1);
   DrawEllipse(40,10,60,55); // left arm
   glPopMatrix();
+  //trial
+
 
   glPushMatrix();
   glRotatef(-60,0,0,1);
@@ -223,6 +225,13 @@ void humanBody(){
   glPopMatrix();
 
   DrawEllipse(15,25,12,135); //head
+
+   glBegin(GL_LIGHT0);
+    glColor3f(0.5,0.5,0);
+  DrawEllipse(7,30,2,64); // left arm
+  glPopMatrix();
+  glEnd();
+
 
   glPushMatrix();
 
@@ -236,6 +245,7 @@ void humanBody(){
 
   glVertex2f(-8,90); // left arm
   glVertex2f(-30,60);
+
 
   glVertex2f(12,118); // right vessel
   glVertex2f(50,65);
@@ -391,7 +401,7 @@ bloodVessel();
 
 normalCells();
 
-cellanimation1();
+
 
 glFlush();
 
